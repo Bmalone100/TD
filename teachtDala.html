@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type = "text/css">
+    <title>TDs | Gov</title>
+    <Style>
+    </Style>
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li> 
+                <li><a href="">Details</a></li>
+                <li><a href="">Parties</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <main>
+        <article>
+            <h1>TDs</h1>
+
+            <section class = "columns-desktop"></section>
+                <div class = "tds">
+                    <img src="" alt="TD">
+                    <div class = "columns">
+                        <div class = "name"></div>
+                        <div class = "title"></div>
+                    </div>
+                    <p class = "desc"></p>
+                    <button data-order="details">Details</button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li> 
+                <li><a href="teachtDala.html">Teacht Dála</a></li>
+                <li><a href="parties.html">Parties</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+<Script>
+    window.addEventListener("DOMContentLoaded", function(e){
+        const orderButtons = document.querySelectorAll("button[data-order]");
+
+            orderButtons.forEach(function(button){
+                button.addEventListener("click", function(e){
+                    const button = e.currentTarget;
+                    const container = button.parentNode;
+
+                const order = {
+                    id: button.getAttribute("data-order"),
+                    title: container.querySelector(".name").innerText,
+                    price: container.querySelector(".title").innerText,
+                    desc: container.querySelector(".desc").innerText
+                };
+
+                localStorage.setItem("order" , JSON.stringify(order));
+
+                const url = window.location.href.replace("teachtDala.html", "details.html");
+                window.location.href = url;
+            });
+        });
+    });
+
+</Script>
+</html>

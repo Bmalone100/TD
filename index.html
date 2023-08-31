@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type = "text/css">
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <Style>
+    </Style>
+
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li> 
+                <li><a href="">Details</a></li>
+                <li><a href="">Parties</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <button class="openbtn" id="sidebar-btn" onclick="openNav()">Sidebar</button> 
+    
+    <div id="mySidebar" class="sidebar">
+        <div class="closebtn" onclick="closeNav()">×</div>
+        <div><a href="teachtDala.html">Teacht Dála</a></div>
+        <div><a href="parties.html">Parties</a></div>
+        <div><a href="map.html">Map</a></div>
+        </div>
+
+    <main id="main">
+        <aside>
+            <article><img src="" class="banner" alt="Banner">
+                <h1>Placeholder Title</h1>
+                <p class = "sub-title">Some Placeholder Text</p>
+            </article> 
+        </aside>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="teachtDala.html">Teacht Dála</a></li>
+                <li><a href="parties.html">Parties</a></li>
+            </ul>
+        </nav>
+    </footer>
+        
+    <script>
+        function openNav() {
+        document.getElementById("mySidebar").style.width = "150px";
+        document.getElementById("sidebar-btn").style.visibility ="hidden";
+        document.getElementById("main").style.left= "150px";
+        }
+            
+        function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("sidebar-btn").style.visibility ="visible";
+        document.getElementById("main").style.left= "0px";
+        }
+    </script>
+</body>
+</html>

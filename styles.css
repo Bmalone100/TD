@@ -1,0 +1,190 @@
+h1 {
+    font-size: 3em;
+    margin-top:  0.5em;
+}
+
+.banner {
+    max-width: 100%;
+}
+
+.sub-title {
+    background-color: white;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+* {
+    margin: 0;
+}
+
+html{
+    position: relative;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cadetblue;
+}
+
+p {
+    margin:  0.5em 0.5em 0;
+    text-align: left;
+}
+
+header{
+    display: block;
+    top: 0;
+    width: 100%;
+    background-color: teal;
+    padding:  10px;
+    padding-left: 10px;
+    position: relative;
+}
+
+nav a:visited,
+nav a:link {
+    color:  white;
+    text-decoration: none;
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+    list-style: none;
+    margin:  0 5px 0 5px;
+}
+
+div>a {
+    color:  white;
+    text-decoration: none;
+}
+
+main {
+    display: block;
+    background-image: url("");
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 5px;
+    min-height: 85%;
+    left: 0px;
+    position: relative;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+footer {
+padding: 15px;
+background-color: teal;
+position: relative;
+}
+
+.button{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: steelblue;
+    }
+    
+.sidebar div {
+    padding: 8px 8px 8px 30px;
+    font-size: 24px;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    }
+    
+.body-text {
+    margin-left: 150px;
+    font-size: 18px;
+    }
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+        }
+        
+.openbtn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: steelblue;
+    visibility: visible;
+        }
+
+aside,
+article {
+    padding:  2em;
+    padding-left: 5px;
+    position: relative;
+} 
+
+aside {
+    text-align: center;
+}
+
+article {
+    width: 75%;
+}
+
+.columns {
+    display: flex;
+}
+
+
+/* TDs */
+
+.tds {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: steelblue;
+    border: solid 1px grey;
+}
+
+.tds img {
+    width: 100%;
+}
+
+.tds .name {
+    font-weight: bold;
+}
+
+.tds .title {
+    text-align: right;
+  }
+
+.tds .columns {
+    width: 100%;
+}
+
+.tds .columns div {
+    width: 50%;
+}
+
+.tds button {
+    background-color: teal;
+    padding: 10px;
+    border:  solid 1px grey;
+    border-radius: 3px;
+    color:  white;
+}

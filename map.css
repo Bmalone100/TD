@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cadetblue;
+}
+
+/* Map */
+  path:hover {
+    fill: purple;
+    transition: fill 0.4s;
+  }
+  
+  svg {
+    display: block;
+    margin: auto;
+  }
+
+  .county {
+    fill:#b0e1b0;
+    fill-opacity:2;
+    stroke:teal;
+    stroke-width: 1px;
+  }
+
+  /*Weird fix for <g> elements*/
+    #Limerick-path {
+    stroke-width: 10px;
+    }
+
+    #Cork-path {
+    stroke-width: 10px;
+    }
+
+    #Waterford-path {
+    stroke-width: 10px;
+    }
+
+    #Galway-path {
+    stroke-width: 10px;
+    }
