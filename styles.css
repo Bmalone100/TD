@@ -87,11 +87,6 @@ background-color: teal;
 position: relative;
 }
 
-.button{
-    margin: 0;
-    padding: 0;
-}
-
 .sidebar {
     height: 100%;
     width: 0;
@@ -122,14 +117,23 @@ position: relative;
     top: 0;
     right: 25px;
     font-size: 36px;
-        }
+}
         
 .openbtn {
     font-size: 24px;
     cursor: pointer;
     background-color: steelblue;
     visibility: visible;
-        }
+}
+
+.layerbtn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: steelblue;
+    position: absolute;
+    top: 150px;
+    right: 150px
+}
 
 aside,
 article {
@@ -188,3 +192,40 @@ article {
     border-radius: 3px;
     color:  white;
 }
+
+/* Map */
+path:hover {
+    fill: purple;
+    transition: fill 0.4s;
+  }
+  
+  svg {
+    display: block;
+    margin: auto;
+  }
+
+  .county {
+    fill:#b0e1b0;
+    fill-opacity:2;
+    stroke:teal;
+    stroke-width: 1px;
+  }
+
+  /*Weird fix for <g> elements - TODO: change to a class*/
+    #Limerick-path {
+    stroke-width: 10px;
+    }
+
+    #Cork {
+    stroke-width: 10px;
+    }
+
+    #Waterford-path {
+    stroke-width: 10px;
+    }
+
+    #Galway-path {
+    stroke-width: 10px;
+    }
+
+    

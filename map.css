@@ -3,37 +3,107 @@ body {
     background-color: cadetblue;
 }
 
-/* Map */
-  path:hover {
-    fill: purple;
-    transition: fill 0.4s;
+nav a:visited,
+nav a:link {
+    color:  white;
+    text-decoration: none;
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+    list-style: none;
+    margin:  0 5px 0 5px;
+}
+
+div>a {
+    color:  white;
+    text-decoration: none;
+}
+
+/*Side Bar*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: steelblue;
   }
   
-  svg {
-    display: block;
-    margin: auto;
+.sidebar div {
+  padding: 8px 8px 8px 30px;
+  font-size: 24px;
+  display: block;
+  transition: 0.5s;
+  cursor: pointer;
+  }
+  
+.body-text {
+  margin-left: 150px;
+  font-size: 18px;
   }
 
-  .county {
-    fill:#b0e1b0;
-    fill-opacity:2;
-    stroke:teal;
-    stroke-width: 1px;
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+      
+.openbtn {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: steelblue;
+  visibility: visible;
+}
+
+.layerbtn {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: steelblue;
+  position: absolute;
+  top: 150px;
+  right: 150px
+}
+/* Map */
+path:hover {
+  fill: purple;
+  transition: fill 0.4s;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+.county {
+  fill:#b0e1b0;
+  fill-opacity:2;
+  stroke:teal;
+  stroke-width: 1px;
+}
+
+/*Weird fix for <g> elements - TODO: change to a class*/
+  #Limerick-path {
+  stroke-width: 10px;
   }
 
-  /*Weird fix for <g> elements*/
-    #Limerick-path {
-    stroke-width: 10px;
-    }
+  #Cork {
+  stroke-width: 10px;
+  }
 
-    #Cork-path {
-    stroke-width: 10px;
-    }
+  #Waterford-path {
+  stroke-width: 10px;
+  }
 
-    #Waterford-path {
-    stroke-width: 10px;
-    }
+  #Galway-path {
+  stroke-width: 10px;
+  }
 
-    #Galway-path {
-    stroke-width: 10px;
-    }
